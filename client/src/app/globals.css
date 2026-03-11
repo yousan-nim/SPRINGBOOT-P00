@@ -1,0 +1,40 @@
+:root {
+  --canvas: #f6f1e8;
+  --panel: rgba(255, 252, 247, 0.78);
+  --panel-strong: #fffaf2;
+  --text: #221c16;
+  --muted: #66584d;
+  --stroke: rgba(34, 28, 22, 0.12);
+  --accent: #c55d2d;
+  --accent-strong: #8f3d19;
+  --income: #176443;
+  --expense: #b6461f;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(197, 93, 45, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(23, 100, 67, 0.18), transparent 26%),
+    linear-gradient(180deg, #f8f3eb 0%, #f3ede3 100%);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

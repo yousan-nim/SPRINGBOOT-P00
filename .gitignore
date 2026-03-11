@@ -1,0 +1,7 @@
+.DS_Store
+.vscode
+client/.next
+client/node_modules
+server/target
+*.log
+.env
