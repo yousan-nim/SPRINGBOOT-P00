@@ -73,7 +73,7 @@ docker compose up --build -d
 หลังจาก container พร้อมใช้งาน:
 
 - Frontend: `http://localhost:3000`
-- Backend API: `http://localhost:8080/api`
+- Backend API: `http://localhost:8080/v1/api`
 - Swagger UI: `http://localhost:8080/swagger-ui.html`
 
 ดูสถานะ service:
@@ -109,13 +109,14 @@ docker compose down -v
 
 ## Useful APIs
 
-- `GET /api/categories`
-- `POST /api/categories`
-- `GET /api/transactions?month=2026-03`
-- `POST /api/transactions`
-- `PUT /api/transactions/{id}`
-- `DELETE /api/transactions/{id}`
-- `GET /api/reports/summary?month=2026-03`
+- `GET /v1/api/categories`
+- `POST /v1/api/categories`
+- `POST /v1/api/auth/register`
+- `GET /v1/api/transactions?month=2026-03`
+- `POST /v1/api/transactions`
+- `PUT /v1/api/transactions/{id}`
+- `DELETE /v1/api/transactions/{id}`
+- `GET /v1/api/reports/summary?month=2026-03`
 
 ## Local development
 
